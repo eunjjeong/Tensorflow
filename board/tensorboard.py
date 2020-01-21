@@ -7,6 +7,7 @@ c = a * b
 c_summary = tf.summary.scalar('point', c)
 merged = tf.summary.merge_all()
 
+
 with tf.Session() as sess:
     writer = tf.summary.FileWriter('/home/jjeong/tf_log', sess.graph)
 
